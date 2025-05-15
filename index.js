@@ -28,5 +28,11 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
   },
   body: JSON.stringify(blogPost)
 })
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(response.status)
+    } else {
+      response.json()
+  })
   .then(data => console.log(data))
+  .catch(error => console.error(error))
