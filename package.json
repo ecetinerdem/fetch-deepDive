@@ -1,0 +1,14 @@
+{
+  "name": "Scrim-s012qtp",
+  "description": "https://scrimba.com/javascript-deep-dive-c0a/~02p",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
